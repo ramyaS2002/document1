@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    border: 5px dotted red;
+    /* background-color: black; */
+    height: 100vh;
+    width: 98vw;
+}
+
+/* header style start............................................................................... */
+.logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.logo a{
+    /* border: 1px solid; */
+    margin-left: -10px;
+    color:blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.logo_1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid white;
+    /* font-size: 1.2rem; */
+}
+header{
+    border: 1px solid;
+    width: 98vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+ul li :hover{
+    color: red;
+}
+a{
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+#check{
+    display: none;
+}
+/* header style end........................................................................... */
+
+/* landing page start.......................................................................... */
+.landing{
+    /* border: px solid red; */
+    display: flex;
+    align-items: center;
+}
+.insta{
+    border: 1px solid;
+    width: 46vw;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* .box1{
+    border: 3px dotted blue;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+} */
+.insta h4{
+    font-size: 1.8rem;
+    font-style: italic;
+}
+.insta h1{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.insta h2{
+    font-size: 2.4rem;
+   font-weight: bold;
+}
+.insta h2::first-letter{
+    color:orangered;
+}
+span{
+    color: orangered;
+}
+.insta p{
+    font-size: 1.2rem;
+}
+.insta button{
+    border: 1px solid rgb(32, 32, 179) ;
+    /* height: 6vh; */
+    width: 13vw; 
+    padding:10px;
+    background-color: rgb(32, 32, 179);
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fb{
+    border: 2px solid;  
+    padding: 0;
+    width: 20vw;
+    font-size: 2.5rem;
+    display: flex;
+   align-items: center;
+    justify-content: space-around;
+}
+.box2{
+    border: 2px dotted orangered;
+    width: 30%;
+}
+.box2 img{
+    width: 90%;
+    border-radius: 20px;
+}
+
+
+
+
+.page-1{
+    border: 10px solid green;
+}
+.landing{
+    display: flex;
+    justify-content: space-around;
+    border: 5px solid yellow;
+}
+.left{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+/* landing page end.......................................................................... */
+
+
+/* Page1 start............................................................................... */
+/* #page1{
+    border: 1px solid dotted;
+    height: 100vh;
+    width: 98vw;
+    background-color: aquamarine;
+    align-content: center;
+    
+    
+}
+.wholeabout{
+    border: 1px solid;
+    height: 60vh;
+    width:85vw;
+    background-color: white;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.box3{
+    border: 1px solid;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    padding-left: 40px;
+
+}
+.box3 h1{
+    color: red;
+    font-size: 2.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.box3 h4{
+    color: blue;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.box3 p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.btn1{
+    border: 1px solid;
+    height: 6vh;
+    width: 14vw;
+    color: red;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+.box4{
+    border: 2px dotted orangered;
+    height: 55vh;
+    width: 50vh;
+    align-content: center;
+}
+.box4 img{
+    border: 1px solid;
+    height: 94%;
+    width: 103%;
+    border-radius:50% ;
+} */
+
+
+/*page1 end........................................................................... */
+/* Media query start.......................................................................... */
+@media (max-width:1000px){
+    .box2 {
+        width: 35%;
+    }
+}
+
+@media (max-width:850px){
+    .box2 {
+        width: 40%;
+    }
+}
+
+
+@media (max-width:768px){
+
+    nav{
+        border: 5px solid;
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 100%;
+        margin:  auto;
+        transition: all 2s;
+        align-items: center;
+        backdrop-filter: blur(10px);
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #check:checked ~ nav{
+        left: 0;
+    }
+    .landing{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .left{
+        width: 80%;
+        align-content: center;
+        align-items: center;
+    }
+    .insta{
+        width: 80%;
+        text-align: justify;
+    }
+    .fb{
+        width:30vw;
+        transform: translatex(-45%);
+        gap: 20px;
+    }
+    .insta button{
+     width: 20vw;   
+    }
+    .box2 {
+        width: 50%;
+    }
+    .landing{
+        padding: 20px;
+    }
+}
+
+
+
+@media (max-width:600px){
+    .box2 {
+        width: 65%;
+    }
+    .fb{
+        transform: translatex(-48%);
+        width: 40vw;
+    }
+    .insta{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .insta button{
+        width: 26vw;
+    }
+}
+
+@media (max-width:380px){
+    .box2 {
+        width: 78%;
+    } 
+    .insta button{
+        width: 30vw;
+    }
+    .fb{
+        width: 50vw;
+        transform: translatex(-18%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .showmenu{
+    display: block;
+} */
